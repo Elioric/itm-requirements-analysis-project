@@ -49,7 +49,7 @@ nav {
     justify-content: space-between;
     align-items: center; */
     width: 100%;
-    height: 10dvh;
+    height: 10lvh;
     /* min-height: 10vh; */
     /* max-height: 30vh; */
     background: linear-gradient(90deg, rgba(213,123,38,1) 0%, rgba(223,157,34,1) 50%, rgba(255,158,0,1) 100%);
@@ -108,7 +108,7 @@ nav {
     display: flex;
     flex-flow: column wrap;
     width: 100%;
-    height: 150dvh;
+    height: 150lvh;
     justify-content: space-around;
     align-content: center;
 }
@@ -408,7 +408,7 @@ nav {
     }
     
     nav {
-        height: 8dvh;
+        height: 8lvh;
         /* min-height: 8vh; */
         /* position: relative; */
         /* z-index: 100; */
