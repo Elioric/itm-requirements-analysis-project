@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJK Sistemas </title>
+    <link rel="stylesheet" href="css/StyleAdmin.css">
+
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo.webp" alt="Logo JJK Sistemas" class="logo">
+        <h1>JJK Sistemas</h1>
+    </header>
+    <main class="container">
+        <section class="buttons">
+            <div class="button-item" onclick="crearTicket()">
+                <img src="img/anadir-billete.webp" alt="Crear Ticket">
+                <p>Crear Ticket</p>
+            </div>
+            <div class="button-item" onclick="verTickets()">
+                <img src="img/portapapeles.webp" alt="Ver Tickets">
+                <p>Ver Tickets</p>
+            </div>
+            <div class="button-item" onclick="mensajes()">
+                <img src="img/mensaje.webp" alt="Mensaje">
+                <p>Mensajes</p>
+            </div>
+            <div class="button-item" onclick="destacados()">
+                <img src="img/favorito.webp" alt="Destacados">
+                <p>Destacados</p>
+            </div>
+        </section>
+        <section class="content">
+            <p>Selecciona una opción para gestionar los tickets.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        
+    </footer>
+
+    <script>
+        function crearTicket() {
+            document.querySelector('.content').innerHTML = '<h2>Crear Ticket</h2><p>Aquí puedes crear un nuevo ticket.</p>';
+        }
+        function verTickets() {
+            document.querySelector('.content').innerHTML = '<h2>Ver Tickets</h2><p>Listado de tickets registrados.</p>';
+        }
+        function mensajes() {
+            document.querySelector('.content').innerHTML = '<h2>Mensajes</h2><p>Aquí puedes ver mensajes relacionados con los tickets.</p>';
+        }
+        function destacados() {
+            document.querySelector('.content').innerHTML = '<h2>Destacados</h2><p>Listado de tickets destacados por el administrador.</p>';
+        }
+    </script>
+</body>
+</html>
