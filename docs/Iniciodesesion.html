@@ -5,8 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/stylee.css">
+
+    <!-- Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
+    <nav>
+        <div class="navBar">
+            <div class="navImage">
+                <a href="index.html"><img src="img/logo.webp" alt="Logo de JJK Sistemas"></a> 
+            </div>
+            <div class="navOptions no-responsive">
+                <a class="navButton" href="index.html">Inicio</a>
+                <a class="navButton" href="inicio.html">Sistema de Tickets</a>
+                <a class="navButton" href="index.html">Sobre nosotros</a>
+                <a class="navButton" href="index.html">Contáctanos</a>
+                <a class="navButton" href="VistaAdmin.html">Admin</a>
+                <a class="navButton" href="VistaUsuario.html">Usuario</a>
+            </div>
+
+            <div class="navOptions responsive">
+                <div class="menuResponsive">
+                    <div class="menuIcon">
+                        <a href="javascript:void(0);" class="icon show" id="menuBars" onclick="cambiarEstadoMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="icon hide" id="menuxmark" onclick="cambiarEstadoMenu()">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="navResponsive" id="navResponsive">
+                        <a class="navButton" href="index.html">Inicio</a>
+                        <a class="navButton" href="inicio.html">Sistema de Tickets</a>
+                        <a class="navButton" href="index.html">Sobre nosotros</a>
+                        <a class="navButton" href="index.html">Contáctanos</a>
+                        <a class="navButton" href="VistaAdmin.html">Admin</a>
+                        <a class="navButton" href="VistaUsuario.html">Usuario</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="iniciodesesión">
         <h1>Bienvenido a JJK Sistemas</h1>
         <form method="post">
@@ -21,9 +61,27 @@
             <div class="recordar">¿Ha olvidado su contraseña?</div>
             <input type="submit" value="Iniciar sesión">
             <div class="registrar">
-                <a href="/Registrarte.html">Registrarte</a>
+                <a href="./Registrarte.html">Registrarte</a>
             </div>
         </form>
     </div>
+    
+    <script>
+        function cambiarEstadoMenu() {
+          var navResponsive = document.getElementById("navResponsive");
+          var xmark = document.getElementById("menuxmark");
+          var bars = document.getElementById("menuBars");
+
+          if (navResponsive.style.display === "flex") {
+            navResponsive.style.display = "none";
+            xmark.style.display = "none";
+            bars.style.display = "flex";
+          } else {
+            navResponsive.style.display = "flex";
+            xmark.style.display = "flex";
+            bars.style.display = "none";
+          }
+        }
+    </script>
 </body>
 </html>
