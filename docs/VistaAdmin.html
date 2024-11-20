@@ -10,8 +10,15 @@
 <body>
     <header class="header">
         <img src="img/logo.webp" alt="Logo JJK Sistemas" class="logo">
-        <h1>JJK Sistemas</h1>
+        <nav class="nav-header">
+            <button onclick="irInicio()">Inicio</button>
+            <button onclick="irPerfil()">Perfil</button>
+            <button onclick="irConfiguracion()">Configuración</button>
+            <button onclick="logout()" class="logout-btn">Log Out</button>
+        </nav>
     </header>
+    
+    
     <main class="container">
         <section class="buttons">
             <div class="button-item" onclick="crearTicket()">
@@ -20,7 +27,7 @@
             </div>
             <div class="button-item" onclick="verTickets()">
                 <img src="img/portapapeles.webp" alt="Ver Tickets">
-                <p>Ver Tickets</p>
+                <p>Administrar Tickets</p>
             </div>
             <div class="button-item" onclick="mensajes()">
                 <img src="img/mensaje.webp" alt="Mensaje">
