@@ -26,6 +26,37 @@ body {
     width: 80px;
     margin-bottom: 10px;
 }
+.nav-header {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-header button {
+    background-color: var(--naranja-claro);
+    color: var(--blanco);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-header button:hover {
+    background-color: var(--naranja);
+}
+
+.logout-btn {
+    background-color: var(--gris-oscuro);
+    color: var(--blanco);
+}
+
+.logout-btn:hover {
+    background-color: red;
+}
 
 .container {
     max-width: 1200px;
